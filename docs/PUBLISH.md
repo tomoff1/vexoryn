@@ -1,8 +1,8 @@
 # Publier VEXORYN gratuitement
 
-Le dépôt et les workflows sont préparés localement. Aucun dépôt distant, release ou site public n'est créé sans compte GitHub et destination réels.
+Le [dépôt public](https://github.com/tomoff1/vexoryn), la [release 0.1.0](https://github.com/tomoff1/vexoryn/releases/tag/v0.1.0) et le [site Pages](https://tomoff1.github.io/vexoryn/) sont publiés. La compilation Windows et le déploiement Pages ont réussi sur GitHub Actions.
 
-La destination choisie est **tomoff1/vexoryn**. Le site et le centre de mises à jour utilisent cette destination. Cela ne signifie pas que le dépôt ou une release existent déjà.
+La destination est **tomoff1/vexoryn**. Le site et le centre de mises à jour utilisent cette destination. La préparation initiale ci-dessous est déjà effectuée ; conservez-la comme référence pour un nouveau dépôt. Pour ce dépôt, passez aux étapes de publication des prochaines versions.
 
 ## Préparer un dépôt de marque
 

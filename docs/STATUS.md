@@ -14,7 +14,7 @@ Ce document distingue le code livré de sa validation. Les rapports effectifs de
 - Pipeline de compilation Windows NSIS / MSI, artefacts et SHA-256.
 - Site statique GitHub Pages, téléchargement des assets d'une release réellement publiée.
 
-La présence d'un workflow ne signifie pas que GitHub Actions a déjà exécuté une compilation. La présence d'une commande réseau ne garantit pas une intégration compatible avec toutes les variantes de serveurs.
+La compilation Windows et le déploiement Pages sur GitHub Actions ont réussi ; voir le rapport de validation. La présence d'une commande réseau ne garantit pas une intégration compatible avec toutes les variantes de serveurs.
 
 ## Limites actuelles et prochaines étapes
 
@@ -32,7 +32,7 @@ La présence d'un workflow ne signifie pas que GitHub Actions a déjà exécuté
 | Plugins | Catalogue / protocole / signature et contrôle de compatibilité à définir. |
 | Mises à jour | Consultation des releases ; application automatique signée à développer. |
 | Signature Windows | Certificat Authenticode à fournir avant diffusion de confiance. |
-| Publication | Compte de marque, dépôt et lancement des workflows requis. |
+| Publication | Dépôt public, release 0.1.0 et site Pages publiés ; compilation Windows CI réussie. |
 | PS5 native | Étude SDK uniquement ; aucun ELF ou PKG VEXORYN natif produit. |
 
 ## Ordre conseillé

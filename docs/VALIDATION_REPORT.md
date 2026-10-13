@@ -19,8 +19,8 @@ Les installateurs finaux et leurs SHA-256 sont dans `artifacts/`. Les fichiers d
 
 Aucune PS5 réelle n'a servi à ces tests. Le firmware 13.60 a été déclaré par l'utilisateur, pas détecté par le programme. Aucun payload n'a été exécuté, aucune installation PKG n'a été réalisée, aucun cheat n'a été activé. Les tests FTP locaux ne valident pas toutes les implémentations homebrew.
 
-Les workflows GitHub préparés doivent encore être exécutés sur le dépôt distant. Une publication et un déploiement Pages ne sont attestés que par leurs résultats réels, indépendamment de la compilation locale.
+Le dépôt `tomoff1/vexoryn` et la release `v0.1.0` ont été publiés avec les installateurs locaux, les sources et SHA256SUMS.txt. Les empreintes SHA-256 des cinq assets distants ont été vérifiées contre les fichiers locaux. Le déploiement Pages a réussi et le site [VEXORYN](https://tomoff1.github.io/vexoryn/) affiche les liens réels de cette release.
 
-Le dépôt `tomoff1/vexoryn` et la release `v0.1.0` ont été publiés avec les installateurs locaux, les sources et SHA256SUMS.txt. Le déploiement Pages a réussi et le site `https://tomoff1.github.io/vexoryn/` affiche les liens réels de cette release. La compilation Windows dans GitHub Actions est en cours de vérification séparée.
+La [compilation Windows GitHub Actions](https://github.com/tomoff1/vexoryn/actions/runs/38424341063) a réussi : tests, compilation optimisée, installateurs et artefact `VEXORYN-Windows-x64` produits sur le serveur. Les installateurs de la release restent ceux compilés et vérifiés localement ; le workflow préserve les releases existantes.
 
 La signature Authenticode, l'updater automatique signé, la reprise REST, l'annulation, les empreintes distantes, la télémétrie console, les adaptateurs PKG et cheats et la version native PS5 restent à développer.
