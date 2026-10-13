@@ -2,6 +2,8 @@
 
 Application Windows indépendante en Rust / Tauri 2 / React / TypeScript pour communiquer avec les services homebrew d'une console sur un réseau privé. Interface française et anglaise, thèmes sombre violet, bleu et rouge. Identité et métadonnées : VEXORYN uniquement.
 
+[Site VEXORYN](https://tomoff1.github.io/vexoryn/) · [Téléchargements Windows et SHA-256](https://github.com/tomoff1/vexoryn/releases/tag/v0.1.0) · [Notes de version](docs/RELEASE_NOTES.md) · [Rapport de validation](docs/VALIDATION_REPORT.md)
+
 Cette première version contient du code réseau réel. Elle doit encore être validée sur une PS5 matérielle : des tests locaux ne prouvent pas la compatibilité de chaque serveur homebrew. Un port ouvert n'identifie pas une PS5. Une transmission ELF n'est pas une confirmation d'exécution. Un transfert PKG n'est pas une installation.
 
 ## Démarrer

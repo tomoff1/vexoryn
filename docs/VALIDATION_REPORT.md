@@ -21,4 +21,6 @@ Aucune PS5 réelle n'a servi à ces tests. Le firmware 13.60 a été déclaré p
 
 Les workflows GitHub préparés doivent encore être exécutés sur le dépôt distant. Une publication et un déploiement Pages ne sont attestés que par leurs résultats réels, indépendamment de la compilation locale.
 
+Le dépôt `tomoff1/vexoryn` et la release `v0.1.0` ont été publiés avec les installateurs locaux, les sources et SHA256SUMS.txt. Le déploiement Pages a réussi et le site `https://tomoff1.github.io/vexoryn/` affiche les liens réels de cette release. La compilation Windows dans GitHub Actions est en cours de vérification séparée.
+
 La signature Authenticode, l'updater automatique signé, la reprise REST, l'annulation, les empreintes distantes, la télémétrie console, les adaptateurs PKG et cheats et la version native PS5 restent à développer.

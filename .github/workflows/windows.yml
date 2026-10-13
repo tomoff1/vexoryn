@@ -3,10 +3,24 @@ on:
   push:
     branches: [main]
     tags: ['v*']
+    paths:
+      - 'src/**'
+      - 'src-tauri/**'
+      - 'tests/**'
+      - 'scripts/licenses.mjs'
+      - 'package*.json'
+      - 'tsconfig.json'
+      - 'vite.config.ts'
+      - 'LICENSE'
+      - 'THIRD_PARTY_LICENSES.txt'
+      - '.github/workflows/windows.yml'
   pull_request:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: windows-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   windows:
     runs-on: windows-latest
@@ -57,4 +71,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           RELEASE_TAG: ${{ github.ref_name }}
-        run: gh release create "$RELEASE_TAG" release-assets/* --draft --title "VEXORYN $RELEASE_TAG" --generate-notes
+        run: |
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "An existing release is preserved. Review the Windows build artifacts separately."
+          else
+            gh release create "$RELEASE_TAG" release-assets/* --draft --title "VEXORYN $RELEASE_TAG" --generate-notes
+          fi
